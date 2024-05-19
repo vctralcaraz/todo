@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+.container {
+    width: 50%;
+    margin: 10svh auto;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+
+.card-head {
+    margin: 0;
+    background: linear-gradient(
+        55deg,
+        rgba(93, 15, 240, 1),
+        rgba(26, 166, 194, 1),
+        rgba(93, 15, 240, 1)
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border: 2px solid #666;
+    border-radius: 20px 20px 0 0;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-div label {
+    color: white;
+    width: 90%;
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs input {
+    width: 95%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+.input-button {
+    box-sizing: content-box;
+}
+
+.inputs {
+    width: 90%;
+}
+
+li {
+    list-style-type: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+    overflow-wrap: break-word;
+    position: relative;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background: linear-gradient(
+        55deg,
+        rgba(93, 15, 240, 1),
+        rgba(26, 166, 194, 1),
+        rgba(93, 15, 240, 1)
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 0.5em;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+li:hover .tooltiptext {
+    visibility: visible;
+    transition: all 0.4s 3s ease;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
